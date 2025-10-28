@@ -5,7 +5,8 @@ $(function () {
     $('.menu-opener').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
-        $('.navbar').toggleClass('active');
+        $('.navbar-collapse').toggleClass('active');
+        $('body').toggleClass('no-scroll');
     });
 
     var swiper1 = new Swiper(".slider-box", {
